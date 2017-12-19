@@ -1,0 +1,16 @@
+body {
+  background-color: #2D2D3B;
+}
+
+.menu_top {
+  display: absolute;
+}
+
+.img_banner {
+  position: inherit;
+  width: inherit;
+}
+.web_banner {
+  width: 100%;
+  top: 0px;
+}
