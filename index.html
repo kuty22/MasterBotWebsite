@@ -8,6 +8,7 @@
    <meta name="author" content="SitePoint">
 
    <link rel="stylesheet" href="assets/css/clear-css.css">
+   <link rel="stylesheet" media="screen and (max-width: 640px)" href="assets/css/mobile-style.css" type="text/css" />
    <link rel="stylesheet" href="assets/css/style.css">
 
    <!--[if lt IE 9]>
@@ -15,27 +16,63 @@
    <![endif]-->
  </head>
  <body>
-   <section class="home">
+   <section id="home" class="home">
      <div class="menu_top">
-       <ul>
-         <li>
-           <p>home</p>
-         </li>
-         <li>
-           <p>About</p>
-         </li>
-         <li>
-           <p>Contact</p>
-         </li>
-       </ul>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
      </div>
      <div class="web_banner">
        <img class="img_banner" src="assets/img/22.png" alt="Home Banner">
      </div>
    </section>
-   <section class="description">
+   <section id="about" class="about">
+     <div>
+       <h1>What is MasterBot ?</h1>
+       <hr />
+       <p>
+         MasterBot is a web platform which will allow you to invest without minimal amount on <br />
+         several MasterNode of CryptoCurrency like Dash, Neo, Crown, etc.<br />
+         <br /><br />
+         But what is a MasterNode in the Crypto-World ? <br />
+         <br />
+         A MasterNode is simply an amount of cryptocurrency needed for <br />
+         protect the network of this cryptocurrency, then like a proof of work  we can pretend to reward.<br />
+         <br /><br />
+       </p>
+       <img class="img_schema" src="assets/img/schema.png" alt="Masternode Schema"/>
+     </div>
    </section>
-   <section class="footer">
+   <section id="contact" class="footer">
+     <h1>Keep informed</h1>
+     <hr />
+     <div class="bot_form">
+      <form action="">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="mail">mail address</label>
+        <input type="text" id="mail" name="mail" placeholder="Your mail address">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="france">France</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+      </form>
+    </div>
    </section>
  </body>
  </html>

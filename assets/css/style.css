@@ -1,10 +1,32 @@
 body {
   background-color: #2D2D3B;
+  color: white;
 }
 
-.menu_top {
-  display: absolute;
+h1 {
+  font-size: 16px;
 }
+
+/**************menu*****************/
+
+.menu_top {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */;
+}
+
+.menu_top a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/**************Banner*****************/
 
 .img_banner {
   position: inherit;
@@ -13,4 +35,32 @@ body {
 .web_banner {
   width: 100%;
   top: 0px;
+}
+
+/**************About*****************/
+
+.about {
+  font-size: 14px;
+  width: 90%;
+  text-align: center;
+  padding-left: 5%;
+}
+
+.img_schema {
+  background-color: white;
+  width: 100%;
+}
+
+
+/**************footer*****************/
+
+.footer {
+  font-size: 14px;
+  width: 90%;
+  padding-left: 5%;
+}
+
+.bot_form {
+  position: relative;
+  display: block;
 }
