@@ -51,6 +51,10 @@ h1 {
   width: 100%;
 }
 
+canvas {
+  filter: blur(2px);
+}
+
 
 /**************footer*****************/
 
