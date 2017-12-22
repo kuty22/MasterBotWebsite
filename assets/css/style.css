@@ -1,6 +1,6 @@
 body {
   background-color: #2D2D3B;
-  color: white;
+  /*color: white;*/
 }
 
 h1 {
@@ -33,8 +33,10 @@ h1 {
   width: inherit;
 }
 .web_banner {
+  z-index: 1;
+  /*position:absolute;*/
   width: 100%;
-  top: 0px;
+  top: -50px;
 }
 
 /**************About*****************/
@@ -52,7 +54,9 @@ h1 {
 }
 
 canvas {
-  filter: blur(2px);
+  background: url("../img/22.png") no-repeat;
+  /*filter: blur(2px);*/
+  z-index: 0;
 }
 
 
