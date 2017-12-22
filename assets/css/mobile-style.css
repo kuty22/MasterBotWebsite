@@ -14,3 +14,12 @@
   padding: 14px 16px;
   text-decoration: none;
 }
+canvas {
+  display: none;
+}
+
+
+.web_banner {
+  display: block !important;
+  /*background: url("../img/banner_web.png") no-repeat;*/
+}
