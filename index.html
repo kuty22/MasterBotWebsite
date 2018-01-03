@@ -5,12 +5,13 @@
   <meta charset="utf-8">
 
   <title>MasterBot</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <meta name="description" content="The MasterBot Website">
+  <meta name="author" content="Quentin Le Baron et Robin Nassoy">
 
   <link rel="stylesheet" href="assets/css/clear-css.css">
   <link rel="stylesheet" media="screen and (max-width: 640px)" href="assets/css/mobile-style.css" type="text/css" />
   <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 
   <!--[if lt IE 9]>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -26,13 +27,13 @@
     </div>
     <canvas id="c">
     </canvas>
-      <div class="web_banner">
-        <img class="img_banner" src="assets/img/banner_web.png" alt="Home Banner">
-      </div>
-      <div class="front_component">
-        <img class="front_img_banner" src="assets/img/masterBotFront.png" />
-        <h1 class=front_sentence_banner>Earn money more money, I love money !!</h1>
-      </div>
+    <div class="web_banner">
+      <img class="img_banner" src="assets/img/banner_web.png" alt="Home Banner">
+    </div>
+    <div class="front_component">
+      <img class="front_img_banner" src="assets/img/masterBotFront.png" />
+      <h1 class=front_sentence_banner>Earn money more money, I love money !!</h1>
+    </div>
   </section>
   <section id="about" class="about">
     <div>
@@ -227,7 +228,7 @@
       }
 
       ctx.strokeStyle = 'rgba(0, 0, 0, 0.5)';
-      ctx.fillStyle = 'red';
+      ctx.fillStyle = 'gold';
       ctx.lineWidth = 4;
       ctx.beginPath();
       ctx.arc(follower.x, follower.y, follower.r, 0, Math.PI * 2);

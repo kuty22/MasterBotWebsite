@@ -1,10 +1,12 @@
 body {
-  background-color: #2D2D3B;
+  background-color: #333;
   /*color: white;*/
+  font-family: 'Roboto Mono', monospace;
 }
 
 h1 {
   font-size: 16px;
+  color: gold;
 }
 
 /**************menu*****************/
@@ -24,6 +26,7 @@ h1 {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  color: gold;
 }
 
 /**************Banner*****************/
@@ -57,7 +60,7 @@ h1 {
   top: 70%;
   color: gold;
   text-align: center;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   width: 100%;
 }
 /**************About*****************/
@@ -68,15 +71,23 @@ h1 {
   text-align: center;
   color: white;
   padding-left: 5%;
+  color: gold;
 }
 
 .title_about {
+  color: gold;
   font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .img_schema {
   background-color: white;
   width: 100%;
+}
+
+.text_about {
+  margin-top: 20px;
 }
 
 canvas {
@@ -85,6 +96,9 @@ canvas {
   z-index: 0;
 }
 
+label {
+  color: gold;
+}
 
 /**************footer*****************/
 
