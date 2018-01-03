@@ -98,6 +98,24 @@ canvas {
 
 label {
   color: gold;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.form_contact {
+  display: grid;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.inpt_form_cont {
+  background-color: #333;
+  color: gold;
+}
+
+.submit_butt {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /**************footer*****************/
