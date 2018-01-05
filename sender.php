@@ -24,7 +24,7 @@ $mail = $_POST['email'];
 if (isset($mail)) {
 
 
-	$mailSub = '[Contact] [' . $siteName . '] '.$subject;
+	$mailSub = '[Contact] [' . $siteName . '] '. 'Personne voulant être informé';
 
 	$body = 'Sender Name: ' . $mail . "\n\n";
 	$body .= 'Sender Mail: ' . $mail . "\n\n";
