@@ -12,7 +12,7 @@
   <link rel="stylesheet" media="screen and (max-width: 640px)" href="assets/css/mobile-style.css" type="text/css" />
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!--[if lt IE 9]>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
    <![endif]-->
@@ -52,36 +52,53 @@
     <h1>Keep informed</h1>
     <hr />
     <div class="bot_form">
-      <form action="" class="form_contact">
-
-        <label for="fname">First Name</label>
-        <input class="inpt_form_cont" type="text" id="fname" name="firstname" placeholder="Your name..">
-
-        <label for="lname">Last Name</label>
-        <input class="inpt_form_cont" type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-        <label for="mail">mail address</label>
+      <!-- <form action="" class="form_contact"> -->
+        <!-- <label for="mail">mail address</label>
         <input class="inpt_form_cont" type="text" id="mail" name="mail" placeholder="Your mail address">
+        <input type="submit" class="submit_butt" value="Submit"> -->
 
-        <label for="country">Country</label>
-        <select class="inpt_form_cont" id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-          <option value="france">France</option>
-        </select>
-
-        <label for="subject">Subject</label>
-        <textarea class="inpt_form_cont" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-        <input type="submit" class="submit_butt" value="Submit">
-
-      </form>
+      <div>
+        <input class="mail inpt_form_cont" type="text" id="mail" name="mail" placeholder="Your mail address"></input>
+        <p class="thanks">Thanks! We'll send you the project progress soon.</p>
+        <hr />
+        <button>
+          <svg version="1.0" id="assets_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 width="15px" height="16px" viewBox="0 0 15 16" enable-background="new 0 0 15 16" xml:space="preserve">
+          <polygon fill="#d9162c" id="back_x5F_big" points="4.17,7.007 15.008,7.007 15.008,8.998 4.182,8.998 9.006,13.822 7.591,15.237 0.336,8.013
+          	7.591,0.747 9.006,2.161 "/>
+          </svg>
+        </button>
+      </div>
     </div>
   </section>
 </body>
-
+  <div class="footer-informations">
+    <p class="footer-copyright">www.MasterBot-Investment.eu</p>
+  </div>
 </html>
+<script type="text/jscript">
+$(function() {
+
+  $('button').on('click', transition);
+
+  function transition() {
+    $('button svg').hide();
+    $('button').addClass('preloader').delay(1800).queue(function() {
+      showMessage();
+      $(this).dequeue();
+    }).animate({'width': '120px'});
+
+    $(this).off('click');
+  }
+
+  function showMessage() {
+    $('p.mail').css({'left': '-=50px', 'opacity': '0'});
+    $('p.thanks').css({'left': '-=50px', 'opacity': '1'});
+    $('button svg').show();
+  }
+
+});
+</script>
 <script type="text/jscript">
   ;
   (function() {
