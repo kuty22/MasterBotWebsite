@@ -21,7 +21,7 @@ $siteName = "www.masterbot-investment.eu";
 $mail = $_POST['email'];
 
 
-if (isset($mail)) {
+if (isset($mail) && $mail != '' && !empty($mail)) {
 
 
 	$mailSub = '[Contact] [' . $siteName . '] '. '';
