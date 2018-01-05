@@ -13,7 +13,7 @@ h1 {
 
 .menu_top {
   overflow: hidden;
-  background-color: #293146;
+  background-color: #333;
   position: relative;; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */;
@@ -88,6 +88,7 @@ h1 {
 
 .text_about {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 canvas {
@@ -100,6 +101,15 @@ label {
   color: gold;
   margin-bottom: 5px;
   margin-top: 5px;
+}
+
+.text_contact {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.link_websites:hover {
+  color: white;
 }
 
 .form_contact {
@@ -127,13 +137,16 @@ label {
 }
 
 .footer-informations {
-  background-color: #293146;
+  border-top: 1px solid #e45c6c;
+  background-color: #333;
   width: 100%;
   height: 35px;
 }
+
 .footer-copyright{
   text-align: right;
   padding-right: 5%;
+  color: gold;
 }
 
 .bot_form {
@@ -179,23 +192,25 @@ label {
 
 .bot_form button {
   margin-top: 30px;
+  margin-bottom: 30px;
   width: 40px;
   height: 40px;
   border-radius: 20px;
   border: 0;
-  background: #fff;
+  background: gold;
   cursor: pointer;
   transition: 0.2s;
 }
 
 .bot_form button:hover {
-  background: #ff1a34;
+  background: #e45c6c;
 }
 
 .bot_form button svg {
   transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
+  fill: #e45c6c;
 }
 
 .bot_form button:hover svg polygon {
@@ -214,4 +229,10 @@ label {
   animation-duration: 600ms;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 3;
+}
+
+.footer_trait {
+  background: #e45c6c;
+  border: 0;
+  height: 1px;
 }

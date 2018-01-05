@@ -38,19 +38,23 @@
   <section id="about" class="about">
     <div>
       <h1 class="title_about">What is MasterBot ?</h1>
-      <hr />
+      <hr class="footer_trait" />
       <p class="text_about">
         MasterBot is a web platform which will allow you to invest without a big amount on several</br>
         </br>
+        </br>
         MasterNode of CryptoCurrency like Dash, Neo, Crown, etc.</br>
+        </br>
         </br>
         But what is a MasterNode in the Crypto-World ?</br>
         A MasterNode is simply an amount of cryptocurrency needed to protect the network of the cryptocurrency, then like a proof of work we can pretend to reward. (like mining for bitcoin)</br>
+        </br>
         </br>
         Problems about MasterNode in our opinions are:</br>
         - a MasterNode can be really expansive for a personal investor</br>
         - the configuration of a master node wallet can be difficult for beginners</br>
         - At this time MasterNode are not known enough and very well documented.</br>
+        </br>
         </br>
         Advantages of using a master node with MasterBot platform are:</br>
         - No skill required</br>
@@ -61,13 +65,18 @@
         - The possibility to change cryptocurrency MasterNode safety</br>
         - Allowed to get reward on big master node.</br>
         </br>
+        </br>
         The only requirement for our platform is to register on our platform, sending crypto-money which you want to invest into master node and then making money. The main idea of this project is  "Together we can make anythings !! ».</br>
         </br>
         We have a team of 3 Members, all in Master Degree: 2 developers and 1 hardware specialist</br>
         You can find more informations on theses links:</br>
-        - Dash master node explanations: http://dashmasternode.org/what-is-a-masternode/</br>
-        - security of network explanations: https://en.wikipedia.org/wiki/Proof-of-stake</br>
-        - list of master node actually available and their reward :https://masternodes.online</br>
+        </br>
+        - Dash master node explanations: <a class="link_websites" onclick="window.open('http://dashmasternode.org/what-is-a-masternode/')">http://dashmasternode.org/what-is-a-masternode/</a></br>
+        </br>
+        - security of network explanations: <a class="link_websites" onclick="window.open('https://en.wikipedia.org/wiki/Proof-of-stake')">https://en.wikipedia.org/wiki/Proof-of-stake</a></br>
+        </br>
+        - list of master node actually available and their reward: <a class="link_websites" onclick="window.open('https://masternodes.online')">https://masternodes.online</a></br>
+        </br>
         </br>
         We need your opinion about our project. We'll start the development soon and hope to show you a first version of the platform as soon as possible.</br>
       </p>
@@ -75,55 +84,66 @@
     </div>
   </section>
   <section id="contact" class="footer">
-    <h1>Keep informed</h1>
-    <hr />
+    <h1 class="text_contact">Feel free to mail us to be keeped informed</h1>
+    <hr class="footer_trait" />
     <div class="bot_form">
       <!-- <form action="" class="form_contact"> -->
-        <!-- <label for="mail">mail address</label>
+      <!-- <label for="mail">mail address</label>
         <input class="inpt_form_cont" type="text" id="mail" name="mail" placeholder="Your mail address">
         <input type="submit" class="submit_butt" value="Submit"> -->
 
       <div>
-        <input class="mail inpt_form_cont" type="text" id="mail" name="mail" placeholder="Your mail address"></input>
-        <p class="thanks">Thanks! We'll send you the project progress soon.</p>
-        <hr />
-        <button>
-          <svg version="1.0" id="assets_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <form action="sender.php" method="POST">
+          <input class="mail inpt_form_cont" type="email" id="email" name="email" placeholder="Your mail address"></input>
+          <p class="thanks">Thanks! We'll send you the project progress soon.</p>
+          <hr />
+          <button type="submit">
+            <svg version="1.0" id="assets_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           	 width="15px" height="16px" viewBox="0 0 15 16" enable-background="new 0 0 15 16" xml:space="preserve">
-          <polygon fill="#d9162c" id="back_x5F_big" points="4.17,7.007 15.008,7.007 15.008,8.998 4.182,8.998 9.006,13.822 7.591,15.237 0.336,8.013
+            <polygon fill="#d9162c" id="back_x5F_big" points="4.17,7.007 15.008,7.007 15.008,8.998 4.182,8.998 9.006,13.822 7.591,15.237 0.336,8.013
           	7.591,0.747 9.006,2.161 "/>
-          </svg>
-        </button>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
   </section>
 </body>
-  <div class="footer-informations">
-    <p class="footer-copyright">www.MasterBot-Investment.eu</p>
-  </div>
+<div class="footer-informations">
+  <p class="footer-copyright">www.MasterBot-Investment.eu</p>
+</div>
+
 </html>
 <script type="text/jscript">
-$(function() {
+  $(function() {
 
-  $('button').on('click', transition);
+    $('button').on('click', transition);
 
-  function transition() {
-    $('button svg').hide();
-    $('button').addClass('preloader').delay(1800).queue(function() {
-      showMessage();
-      $(this).dequeue();
-    }).animate({'width': '120px'});
+    function transition() {
+      $('button svg').hide();
+      $('button').addClass('preloader').delay(1800).queue(function() {
+        showMessage();
+        $(this).dequeue();
+      }).animate({
+        'width': '120px'
+      });
 
-    $(this).off('click');
-  }
+      $(this).off('click');
+    }
 
-  function showMessage() {
-    $('p.mail').css({'left': '-=50px', 'opacity': '0'});
-    $('p.thanks').css({'left': '-=50px', 'opacity': '1'});
-    $('button svg').show();
-  }
+    function showMessage() {
+      $('p.mail').css({
+        'left': '-=50px',
+        'opacity': '0'
+      });
+      $('p.thanks').css({
+        'left': '-=50px',
+        'opacity': '1'
+      });
+      $('button svg').show();
+    }
 
-});
+  });
 </script>
 <script type="text/jscript">
   ;
